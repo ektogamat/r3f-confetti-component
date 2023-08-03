@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+.container {
+  bottom: 5%;
+  left: 8%;
+  margin: 0;
+  padding: 0;
+  /* transform: translate(-50%, 60px); */
+  position: absolute;
+  pointer-events: none;
+}
+
+.ctaButton {
+  width: max-content;
+  pointer-events: all;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background: white;
+  color: rgb(4, 72, 104);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  transition: all 0.8s ease-in-out;
+  margin: 0;
+  position: absolute;
+  top: 2.5%;
+  right: 4%;
+}
+
+.contact {
+  margin-left: auto;
+  font-size: 0.5em;
+  padding: 9px 20px;
+  width: max-content;
+  border: 1px solid white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ctaButton:hover {
+  background: black;
+  color: white;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10.5vw;
+  line-height: 1em;
+  opacity: 0.95;
+  color: white;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.65vw;
+  user-select: none;
+  pointer-events: none;
+  position: relative;
+  bottom: -10px;
+  left: 0.8%;
+  line-height: 0em;
+  font-weight: 100;
+  color: white;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 3%;
+  left: 4%;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  user-select: none;
+  pointer-events: none;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.322);
+}
+
+a {
+  color: rgba(255, 255, 255, 0.322);
+  pointer-events: all;
+}
