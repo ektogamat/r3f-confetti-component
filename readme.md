@@ -8,7 +8,9 @@ Adds confetti explosions to your projects with many customization options. Downl
 
 [See the demo here](https://r3f-confetti-component.vercel.app/)
 [See the on Code Sandbox](https://codesandbox.io/s/r3f-confetti-component-jt4qd3)
-[See minimal example on Code Sandbox](https://codesandbox.io/s/r3f-confetti-simple-example-ysfytq)
+
+[See minimal example on Code Sandbox](https://codesandbox.io/s/r3f-confetti-simple-example-ysfytq)  
+[See minimal example with duration on Code Sandbox](https://codesandbox.io/s/r3f-confetti-simple-example-with-duration-5gcsrv)
 
 # HOW TO USE?
 
