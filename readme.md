@@ -40,6 +40,7 @@ You can add this to your project to have a debug interface to change the paramet
 
 | Name          | Type    | Default                        | Description                                                                     |
 | ------------- | ------- | ------------------------------ | ------------------------------------------------------------------------------- |
+| isExploding   | Boolean | false                          | Enable exploding (Start the confetti).                                         |
 | Amount        | Number  | 100                            | The amount of particles.                                                        |
 | Rate          | Number  | 3                              | Increases or decreases the frequency for particles. Don't set it too high.      |
 | Radius        | Number  | 15                             | The radius of each explosion.                                                   |
@@ -81,5 +82,7 @@ I genuinely appreciate your support! If you're willing to show your appreciation
 ### Credits
 
 Thanks a lot Romain for the help: https://github.com/Romaixn
+
 Based on: https://github.com/JamesChan21/threejs-confetti
+
 Based on: https://github.com/daniel-lundin/dom-confetti

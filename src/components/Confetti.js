@@ -3,12 +3,13 @@
 // Based on: https://github.com/daniel-lundin/dom-confetti
 // If you use, please credit it :)
 
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 
 /**
  * @param {Object} options
+ * @param {Boolean | undefined} options.isExploding Enable exploding
  * @param {Number | undefined} options.amount The amount of particles
  * @param {Number | undefined} options.rate Increases or decreases the frequency for particles. Don't set it too high.
  * @param {Number | undefined} options.radius The radius of each explosion.
@@ -17,13 +18,13 @@ import * as THREE from 'three'
  * @param {Number | undefined} options.fallingHeight Height for the particles to fall from
  * @param {Number | undefined} options.fallingSpeed The speed of particles
  * @param {(Number)[] | undefined} options.colors Array of Hex color codes for particles. Example: [0x0000ff, 0xff0000, 0xffff00]
- * @param {Number | String | undefined} options.duration Duration of the particles in Milliseconds. Set as 'forever' string for infinity explosion
  * @param {Boolean | undefined} options.enableShadows Enable particle shadows. Set false for better performance.
  *
  */
 
 export default function ExplosionConfetti(
   {
+    isExploding = false,
     amount = 100,
     rate = 3, //be careful with this number. Can freze your app
     radius = 15,
@@ -32,14 +33,11 @@ export default function ExplosionConfetti(
     fallingHeight = 10,
     fallingSpeed = 8,
     colors = [0x0000ff, 0xff0000, 0xffff00],
-    duration = 10000,
     enableShadows = false
   },
   props
 ) {
   const groupRef = useRef()
-  const [isExploding, setIsExploding] = useState()
-  const [explodingTimeout, setExplodingTimeout] = useState()
   const [booms, setBooms] = useState([])
 
   rate = rate / 100
@@ -136,21 +134,6 @@ export default function ExplosionConfetti(
       particleAmount += boom.children.length
     }
   })
-
-  useEffect(() => {
-    setIsExploding(true)
-    if (duration === 'forever') {
-      if (explodingTimeout) {
-        clearTimeout(explodingTimeout)
-      }
-      const timeout = setTimeout(() => {
-        setIsExploding(false)
-      }, duration)
-      setExplodingTimeout(timeout)
-    }
-
-    return () => clearTimeout(explodingTimeout)
-  }, [duration, explodingTimeout])
 
   return <mesh ref={groupRef} />
 }
