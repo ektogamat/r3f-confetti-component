@@ -13,7 +13,7 @@ export default function App() {
       <Canvas dpr={1} shadows gl={{ antialias: false }} camera={{ position: [-2, 1, 6], near: 0.5, fov: 45 }}>
         <OrbitControls zoomSpeed={4} maxDistance={8} maxPolarAngle={Math.PI / 2.1} autoRotate />
         <Character rotation={[0, -2.9, 0]} scale={2.5} position={[0, -0.7, 0]} />
-        <ExplosionConfetti rate={2} amount={50} enableShadows duration={'forever'} />
+        <ExplosionConfetti rate={2} amount={50} enableShadows isExploding={true} />
         <Lights />
         <BackgroundBG />
         <EffectComposer>
