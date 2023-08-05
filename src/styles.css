@@ -21,12 +21,14 @@ body {
 
 .container {
   bottom: 5%;
-  left: 8%;
+  left: 5%;
   margin: 0;
   padding: 0;
   /* transform: translate(-50%, 60px); */
   position: absolute;
   pointer-events: none;
+  width: 90%;
+  text-align: center;
 }
 
 .ctaButton {
@@ -35,8 +37,8 @@ body {
   cursor: pointer;
   padding: 15px 20px;
   border-radius: 10px;
-  border: 2px solid white;
-  background: white;
+  border: 2px solid rgb(205, 123, 0);
+  background: rgb(42, 42, 42);
   color: rgb(4, 72, 104);
   font-size: 0.8em;
   letter-spacing: 0.1em;
@@ -45,6 +47,7 @@ body {
   position: absolute;
   top: 2.5%;
   right: 4%;
+  color: white;
 }
 
 .contact {
@@ -58,19 +61,21 @@ body {
 }
 
 .ctaButton:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 10.5vw;
-  line-height: 1em;
+  font-size: 2em;
+  line-height: 1.5em;
   opacity: 0.95;
-  color: white;
+  color: rgb(54, 54, 54);
+
   user-select: none;
   pointer-events: none;
-  opacity: 0.3;
+  opacity: 0.2;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -83,7 +88,7 @@ h3 {
   left: 0.8%;
   line-height: 0em;
   font-weight: 100;
-  color: white;
+  color: rgb(54, 54, 54);
 }
 
 h2 {
@@ -97,14 +102,16 @@ h2 {
   user-select: none;
   pointer-events: none;
   font-weight: bold;
-  color: white;
+  color: rgb(54, 54, 54);
 }
 
 p {
-  color: rgba(255, 255, 255, 0.322);
+  color: rgb(54, 54, 54);
+  opacity: 0.3;
 }
 
 a {
-  color: rgba(255, 255, 255, 0.322);
+  color: rgb(54, 54, 54);
+
   pointer-events: all;
 }

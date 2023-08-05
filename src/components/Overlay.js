@@ -12,18 +12,10 @@ export default function Overlay() {
       </button>
 
       <div className="container">
-        <h1>R3F CONFETTI COMPONENT</h1>
-        <p>Adds confetti explosions to your projects with many customization options. <a href="https://gist.github.com/ektogamat/f810b36ea0d990fe480ed2d634380c8f" target="_blank">Download it here.</a></p>
+        <h1>React three fiber component</h1>
+        <p>Adds confetti explosions to your projects with many customization options. <a href="https://github.com/ektogamat/r3f-confetti-component" target="_blank">Download it here.</a></p>
         <p>
-          Creeated by Anderson Mancini.{' '}
-          <a href="https://market.pmnd.rs/model/korrigan-wolf" target="">
-            Model credits
-          </a>
-          .{' '}
-          <a href="https://skybox.blockadelabs.com/" target="_blank">
-            Blockade Labs Envmap
-          </a>
-          .
+          Creeated by Anderson Mancini and Romain Herault.
         </p>
       </div>
     </>
